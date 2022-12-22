@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div id="container">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+<form action="action_page.php" style="border:1px solid #ccc">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <fieldset id="fieldset1">
+        <legend>1 Your Basic Info</legend>
+      <p><label for="name"><b>Name</b></label>
+      <input type="name" required></p>
+      <p><label for="email"><b>Email</b></label>
+      <input type="text" name="email" required></p>
+  
+      <p><label for="psw"><b>Password</b></label>
+      <input type="password" name="psw" required></p>
+  
+      <p><label for="age:"><b>Age:</b></label>
+      <label>
+        <input type="radio" name="under 13" style="margin-bottom:15px"> Under 13
+      </label>
+      <label>
+        <input type="radio" name="over 13" style="margin-bottom:15px"> Over 13
+      </label> </p>
+      </fieldset>
+
+      <fieldset id="fieldset2">
+      <legend>2 Your Profile </legend>
+       <p>
+        <label for="Bio"><b>Bio:</b></label>
+        <textarea placeholder="" name="Bios" cols="20 rows=10>"></textarea> Job</p>
+         
+       <p><label for="role"><b>Role</b></label> 
+        <select name="role" id="role">
+        <option value="Front-End Developer"> Front-End Developer</option>
+        </select></p>
+     <p><label>
+        <input type="checkbox" name="Development" style="margin-bottom:5px"> Development
+      </label></p>
+      <p><label>
+        <input type="checkbox" name="Design" style="margin-bottom:5px"> Design
+      </label></p>
+      <p><label>
+        <input type="checkbox" name="Business" style="margin-bottom:5px"> Business
+      </label></p>
+    </fieldset>
+      <div class="clearfix">
+    <h2><button type="submit" class="signupbtn">Sign Ups</button></h2>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
